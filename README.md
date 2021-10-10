@@ -23,3 +23,9 @@ Then you just need to copy the file `distribution.py` into your timewarrior exte
 git clone git@github.com:tom-doerr/timew_distribution.git
 cp timew_distribution/distribution.py ~/.timewarrior/extensions/
 ```
+
+## Plotting for the current tags
+To plot the distribution for the currently tracked tags, you can run
+```
+timew dist $(timew | awk 'NR==1 {$1=""; print $0}')
+```
