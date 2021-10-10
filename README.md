@@ -9,6 +9,8 @@
 This plugin plots the time you spent on a tag as a histogram.
 The location of the last item you tracked is marked with a red square in the plot.
 
+Instead of typing `timew distribution ...` you can also type `timew dist ...` or `timew dis ...`.
+
 
 ## Installation
 Install the `termplotlib` library using
