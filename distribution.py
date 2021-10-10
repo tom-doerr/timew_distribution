@@ -77,8 +77,13 @@ data = filtered_data
 x_range = []
 
 for entry in data:
-    if 'end' in entry:
-        x_range.append((entry['start'], entry['end']))
+    # print("entry:", entry)
+    if 'end' not in entry:
+        # timestamp in %Y%m%dT%H%M%SZ format
+        date_now = datetime.datetime.utcnow()
+        entry['end'] = date_now.strftime('%Y%m%dT%H%M%SZ')
+    print("entry:", entry)
+    x_range.append((entry['start'], entry['end']))
 
 
 x_range_start = []
