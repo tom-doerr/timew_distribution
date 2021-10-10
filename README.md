@@ -1,4 +1,4 @@
-<h1 align="center">timew distribution 📈/h1>
+<h1 align="center">timew distribution 📈</h1>
 
 <p align="center">
     <img src='https://github.com/tom-doerr/bins/raw/main/timew_distribution/td1.gif'>
