@@ -29,3 +29,10 @@ To plot the distribution for the currently tracked tags, you can run
 ```
 timew dist $(timew | awk 'NR==1 {$1=""; print $0}')
 ```
+## Plot when done tracking
+Plot every time the timewarrior data is modified:
+```
+while inotifywait -e modify ~/.timewarrior/data; do
+        timew dist $(timew | awk 'NR==1 {$1=""; print $0}')
+done
+```
